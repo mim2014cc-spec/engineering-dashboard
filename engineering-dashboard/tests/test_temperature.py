@@ -1,0 +1,6 @@
+def classify_temperature(celsius: float) -> str:
+    if not -20 <= celsius <= 80:
+        raise ValueError("อุณหภูมิต้องอยู่ระหว่าง -20 ถึง 80 °C")
+    if celsius <= 30:
+        return "NORMAL"
+    return "WARNING" if celsius <= 35 else "CRITICAL"
