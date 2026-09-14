@@ -1,4 +1,4 @@
-import streamlit as st
+﻿import streamlit as st
 
 st.set_page_config(
     page_title="Engineering Dashboard",
@@ -6,23 +6,16 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("⚙️ Engineering Dashboard System")
-st.subheader("ยินดีต้อนรับสู่ระบบบริหารจัดการข้อมูลทางวิศวกรรม")
+st.title("ระบบบริหารจัดการข้อมูลทางวิศวกรรม (Engineering Dashboard)")
+st.info("👈 เลือกเมนูการทำงานที่แถบซ้ายมือ (Sidebar) เพื่อดูข้อมูลของแต่ละโมดูล")
 
-# แสดงเมนูการใช้งาน
-st.info("👈 เลือกเมนูการทำงานที่แถบซ้ายมือ (Sidebar) เพื่อดูข้อมูล Temperature Monitoring")
-
-st.divider()
-
-# แสดงรายชื่อสมาชิกในกลุ่ม
-st.markdown("### 👥 รายชื่อสมาชิกในกลุ่ม")
-
+st.subheader("👥 รายชื่อสมาชิกในกลุ่ม")
 members = [
-    "1. ภีม",
-    "2. เมธา",
-    "3. มาร์ก",
-    "4. ธนโชค",
-    "5. จิตติ"
+    "1. ภีม (Temperature Monitoring)",
+    "2. เนติธร (Humidity Monitoring)",
+    "3. เมธา (Power Monitoring)",
+    "4. ธนโชค (Safety Alarm System)",
+    "5. จิตติ (System Summary & QA Lead)"
 ]
 
 for member in members:
