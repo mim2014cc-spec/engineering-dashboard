@@ -42,7 +42,7 @@ with col_in2:
 temp_input = st.session_state.temp_val
 
 # 4. ส่วนคำนวณและแสดงผล
-if st.button("Check Status", use_container_width=True):
+if st.button("Check Status", width="stretch"):
     status = TemperatureService.check_status(temp_input)
     temp_f = TemperatureService.celsius_to_fahrenheit(temp_input)
     
